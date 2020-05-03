@@ -1,0 +1,13 @@
+# PyData
+pandas
+numpy
+scipy
+scikit-learn
+
+# Data viz
+matplotlib
+plotly
+
+# Others
+requests
+jupyterlab
