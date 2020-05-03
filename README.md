@@ -10,14 +10,14 @@ data analytics.
 To launch a container simply pull the image from Docker Hub:
 
 ```
-docker run -p 8888:8888 vioquedu/basic-pydata start.sh
+docker run -p 8888:8888 -v $(pwd):/app vioquedu/basic-pydata start.sh
 ```
 
 Copy the token from the initial logs to log in. If you don't need authentication
 you can add the following option:
 
 ```
-docker run -p 8888:8888 vioquedu/basic-pydata start.sh --NotebookApp.token=''
+docker run -p 8888:8888 -v $(pwd):/app vioquedu/basic-pydata start.sh --NotebookApp.token=''
 ```
 
 ## Libraries
